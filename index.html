@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendly Website</title>
+    <style>
+        
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/gayson.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    cursor: url('https://cdn.pixabay.com/photo/2012/04/12/12/39/bubble-30311_1280.png'), auto;
+    position: relative; /* To position social buttons absolutely */
+    overflow: hidden; /* To hide any overflowed content */
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff; /* Changed to white to stand out against background */
+    margin: 20px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+    position: absolute;
+    top: 20px; /* Position the title near the top */
+}
+
+.socials {
+    position: absolute;
+    top: 80px; /* Adjusted to avoid overlap with the title */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    pointer-events: none; /* Prevents interaction with the container itself */
+}
+
+.social {
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s, background 0.3s; /* Added background transition */
+    position: absolute;
+    pointer-events: auto; /* Allows interaction with the social buttons */
+}
+
+.social:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #9400d3, #4b0082, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000); /* Reversed gradient on hover */
+}
+
+
+/* Randomly positioning social buttons */
+.social:nth-child(1) { top: 10%; left: 10%; }
+.social:nth-child(2) { top: 20%; right: 15%; }
+.social:nth-child(3) { bottom: 15%; left: 25%; }
+.social:nth-child(4) { bottom: 20%; right: 25%; }
+    </style>
+</head>
+<body>
+    <h1>MICHAEL GAYSON</h1>
+    <div class="socials">
+        <a href="https://x.com/MichaelGayson_" class="social" target="_blank">GAYTER</a>
+        <a href="https://t.me/+3Ay90YR8V7M4OTc0" class="social" target="_blank">GAYGRAM</a>
+        <a href="https://dexscreener.com" class="social" target="_blank">GAYSCREENER</a>
+        <a href="https://pump.fun" class="social" target="_blank">GAYFUN</a>
+    </div>
+</body>
+</html>
